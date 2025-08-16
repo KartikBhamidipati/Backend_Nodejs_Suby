@@ -26,8 +26,8 @@ app.use('/uploads',express.static('/uploads'));
 
 
 
-app.use('/home',(req,res)=>{
-    res.send('<h1>Hello')
+app.use('/',(req,res)=>{
+    res.send('<h1>Welcome to Suby!</h1>')
 })
 
 app.listen(PORT,()=>{
